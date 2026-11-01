@@ -2,10 +2,10 @@
 // src/products/products.module.ts
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { ProductsService } from './products.service';
-import { ProductsController } from './products.controller';
-import { Product } from './entities/product.entity';
-import { ProductsRepository } from './products.repository';
+import { ProductsService } from './products.service.js';
+import { ProductsController } from './products.controller.js';
+import { Product } from './entities/product.entity.js';
+import { ProductsRepository } from './products.repository.js';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Product])], // Registers Product repository
